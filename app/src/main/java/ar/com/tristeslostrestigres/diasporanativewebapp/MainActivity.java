@@ -396,6 +396,20 @@ public class MainActivity extends AppCompatActivity {
                             return false;
                         }
 
+                    case R.id.jb_public:
+                        setTitle(R.string.jb_public);
+                        if (Helpers.isOnline(MainActivity.this)) {
+                            if (!progressDialog.isShowing()) progressDialog.show();
+                            webView.loadUrl("https://" + podDomain + "/public");
+                            return true;
+                        } else {  // No Internet connection
+                            Toast.makeText(
+                                    MainActivity.this,
+                                    getString(R.string.no_internet),
+                                    Toast.LENGTH_LONG).show();
+                            return false;
+                        }
+
                     case R.id.jb_settings:
                         setTitle(R.string.jb_settings);
                         if (Helpers.isOnline(MainActivity.this)) {
@@ -535,6 +549,8 @@ public class MainActivity extends AppCompatActivity {
                         "        document.getElementById('main-nav'));" +
                         "    }" +
                         "})();");
+
+                webView.scrollTo(0,65);
 
                 if (progressDialog.isShowing()) progressDialog.dismiss();
             }

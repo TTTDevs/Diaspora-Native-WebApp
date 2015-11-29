@@ -16,7 +16,7 @@
 
             <item
                 android:id="@+id/jb_aspects"
-                android:icon="@drawable/jb_aspects"
+                android:icon="@drawable/jb_aspects2"
                 android:title="@string/jb_aspects" />
 
             <!--<item-->
@@ -48,6 +48,11 @@
                 android:id="@+id/jb_mentions"
                 android:icon="@drawable/jb_mentions"
                 android:title="@string/jb_mentions" />
+
+            <item
+                android:id="@+id/jb_public"
+                android:icon="@drawable/jb_aspects"
+                android:title="@string/jb_public" />
 
         </menu>
     </item>
