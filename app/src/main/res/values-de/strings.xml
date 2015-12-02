@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Diaspora Native WebApp</string>
     <string name="reload">Neu laden</string>
     <string name="title_activity_pods">Pod auswählen</string>
     <string name="filter_hint">Pod-Domain eingeben</string>
@@ -103,7 +104,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see http://www.gnu.org/licenses/.</string>
     <string name="about_yes">Projektseite von *martinchodev* besuchen</string>
-    <string name="app_name" translatable="false"></string>
     <string name="jb_public">Öffentliche Aktivitäten</string>
     <string name="messages">Unterhaltungen</string>
     <string name="mobile">Mobile Ansicht</string>

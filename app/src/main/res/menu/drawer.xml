@@ -19,16 +19,6 @@
                 android:icon="@drawable/jb_aspects2"
                 android:title="@string/jb_aspects" />
 
-            <!--<item-->
-                <!--android:id="@+id/jb_notifications"-->
-                <!--android:icon="@drawable/jb_notification"-->
-                <!--android:title="@string/jb_notifications" />-->
-
-            <!--<item-->
-                <!--android:id="@+id/jb_conversations"-->
-                <!--android:icon="@drawable/jb_conversation"-->
-                <!--android:title="@string/jb_conversations" />-->
-
             <item
                 android:id="@+id/jb_activities"
                 android:icon="@drawable/jb_activities"
