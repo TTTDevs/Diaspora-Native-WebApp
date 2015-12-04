@@ -70,7 +70,7 @@
 
     <string name="fab4_title">Clear cache and exit App</string>
     <string name="fab3_title">New message</string>
-    <string name="fab2_title">Go to top</string>
+    <string name="fab2_title">Reload site</string>
     <string name="fab1_title">Search by tags or persons</string>
     <string name="fab1_title_tag">Search for tag ...</string>
     <string name="fab1_title_person">Search for person ...</string>

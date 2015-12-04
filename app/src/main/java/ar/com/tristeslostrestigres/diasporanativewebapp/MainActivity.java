@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void fab2_click(View v){
         if (Helpers.isOnline(MainActivity.this)) {
-            webView.scrollTo(0, 65);
+            webView.reload();
         } else {  // No Internet connection
             Toast.makeText(
                     MainActivity.this,

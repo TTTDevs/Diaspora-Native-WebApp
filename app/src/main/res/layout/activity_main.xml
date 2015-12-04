@@ -69,13 +69,13 @@
                     fab:fab_size="mini" />
 
                 <com.getbase.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab3_action"
+                    android:id="@+id/fab1_action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="fab3_click"
+                    android:onClick="fab1_click"
                     fab:fab_colorNormal="@color/fab_small"
-                    fab:fab_icon="@drawable/fab_edit"
-                    fab:fab_title="@string/fab3_title"
+                    fab:fab_icon="@drawable/fab_search"
+                    fab:fab_title="@string/fab1_title"
                     fab:fab_colorPressed="@color/fab_small_pressed"
                     fab:fab_labelStyle="@style/menu_labels_style"
                     fab:fab_size="mini" />
@@ -86,19 +86,19 @@
                     android:layout_height="wrap_content"
                     android:onClick="fab2_click"
                     fab:fab_colorNormal="@color/fab_small"
-                    fab:fab_icon="@drawable/fab_top"
+                    fab:fab_icon="@drawable/fab_reload"
                     fab:fab_title="@string/fab2_title"
                     fab:fab_colorPressed="@color/fab_small_pressed"
                     fab:fab_size="mini" />
 
                 <com.getbase.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab1_action"
+                    android:id="@+id/fab3_action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="fab1_click"
+                    android:onClick="fab3_click"
                     fab:fab_colorNormal="@color/fab_small"
-                    fab:fab_icon="@drawable/fab_search"
-                    fab:fab_title="@string/fab1_title"
+                    fab:fab_icon="@drawable/fab_edit"
+                    fab:fab_title="@string/fab3_title"
                     fab:fab_colorPressed="@color/fab_small_pressed"
                     fab:fab_labelStyle="@style/menu_labels_style"
                     fab:fab_size="mini" />

@@ -62,7 +62,7 @@
 
     <string name="fab4_title">Cache leeren und App verlassen</string>
     <string name="fab3_title">Neuer Beitrag</string>
-    <string name="fab2_title">Nach oben scrollen</string>
+    <string name="fab2_title">Seite neu laden</string>
     <string name="fab1_title">nach Personen oder Tags suchen</string>
     <string name="fab1_title_tag">Suche nach Tag #...</string>
     <string name="fab1_title_person">Suche nach Person ...</string>
@@ -106,7 +106,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/.</string>
     <string name="about_yes">Projektseite von *martinchodev* besuchen</string>
     <string name="jb_public">Öffentliche Aktivitäten</string>
     <string name="messages">Unterhaltungen</string>
-    <string name="mobile">Mobile Ansicht</string>
+    <string name="mobile">Ansicht wechseln</string>
     <string name="new_post">Neuer Beitrag</string>
     <string name="notifications">Benachrichtigungen</string>
     <string name="search">Suche</string>
