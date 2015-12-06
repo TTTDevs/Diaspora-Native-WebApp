@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Diaspora Native WebApp</string>
+    <string name="app_name">Diaspora Native WebApp</string>
     <string name="reload">Reload</string>
     <string name="title_activity_pods">Select Pod</string>
     <string name="filter_hint">Enter pod domain</string>
@@ -40,7 +40,7 @@
     // Drawer and App
 
     <string name="app_copyright">your freedom | data | network</string>
-    <string name="closeDrawer">Navigation View</string>
+    <string name="closeDrawer" translatable="false">Navigation View</string>
     <string name="openDrawer">Navigation View Closed</string>
     <string name="jb_menu_0">Personal sites</string>
     <string name="jb_menu_1">Settings</string>
@@ -60,6 +60,7 @@
     <string name="jb_settings">Personal settings</string>
     <string name="jb_aspects">My aspects</string>
     <string name="jb_pod">Change pod</string>
+    <string name="jb_public">Public activities</string>
 
     // Floating Action Buttons - Toasts
 
@@ -69,7 +70,7 @@
 
     <string name="fab4_title">Clear cache and exit App</string>
     <string name="fab3_title">New message</string>
-    <string name="fab2_title">Go to top</string>
+    <string name="fab2_title">Reload site</string>
     <string name="fab1_title">Search by tags or persons</string>
     <string name="fab1_title_tag">Search for tag ...</string>
     <string name="fab1_title_person">Search for person ...</string>
@@ -93,7 +94,7 @@
         "By_me" in my sourcecode. All of the rest is the work of *martinchodev*. Big thanks to him.</string>
 
     //Dialog
-    <string name="license_yes" translatable="false">Visit project on GitHub</string>
+    <string name="license_yes">Visit project on GitHub</string>
     <string name="license_no" translatable="false">OK</string>
     <string name="license_title">Diaspora Native WebApp</string>
     <string name="license_text">Copyright (C) 2015  by martinchodev\n\n

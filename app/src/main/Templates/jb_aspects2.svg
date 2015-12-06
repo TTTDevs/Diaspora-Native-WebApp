@@ -13,8 +13,8 @@
    viewBox="0 0 24 24"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="jb_mentions.svg"
-   inkscape:export-filename="/home/juergen/Projekte/Android/Android_Studio/Diaspora-Native-WebApp-1.5.4/app/src/main/Templates/jb_mentions.png"
+   sodipodi:docname="jb_aspects2.svg"
+   inkscape:export-filename="/home/juergen/Projekte/Android/Android_Studio/Diaspora-Native-WebApp-1.5.4/app/src/main/Templates/jb_aspects.png"
    inkscape:export-xdpi="172"
    inkscape:export-ydpi="172">
   <metadata
@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,26 +41,18 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="726"
+     inkscape:window-height="744"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="6.9532167"
-     inkscape:cx="8.8095058"
-     inkscape:cy="27.632409"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="0.85257157"
+     inkscape:cy="12"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
-  <text
-     sodipodi:linespacing="125%"
-     id="text4134"
-     y="18.124294"
-     x="0.48587567"
-     style="font-style:normal;font-weight:normal;font-size:23.14124298px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     xml:space="preserve"><tspan
-       y="18.124294"
-       x="0.48587567"
-       id="tspan4136"
-       sodipodi:role="line"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">@</tspan></text>
+  <path
+     id="path4164"
+     d="m 15,11.5 c -1.11,0 -2,0.89 -2,2 a 2,2 0 0 0 2,2 2,2 0 0 0 2,-2 c 0,-1.11 -0.9,-2 -2,-2 m -3,8 A 8,8 0 0 1 3.9999998,11.5 8,8 0 0 1 12,3.5 a 8,8 0 0 1 8,8 8,8 0 0 1 -8,8 m 0,-18 A 10,10 0 0 0 1.9999998,11.5 10,10 0 0 0 12,21.5 10,10 0 0 0 22,11.5 10,10 0 0 0 12,1.5 m 2,7 c 0,-1.11 -0.9,-2 -2,-2 -1.11,0 -2.0000002,0.89 -2.0000002,2 A 2,2 0 0 0 12,10.5 a 2,2 0 0 0 2,-2 m -5.0000002,3 a 2,2 0 0 0 -2,2 2,2 0 0 0 2,2 A 2,2 0 0 0 11,13.5 c 0,-1.11 -0.9,-2 -2.0000002,-2 z"
+     inkscape:connector-curvature="0" />
 </svg>
