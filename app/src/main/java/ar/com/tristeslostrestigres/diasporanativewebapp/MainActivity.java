@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                     case R.id.jb_public:
-                        setTitle(R.string.jb_public);
+                        txtTitle.setText(R.string.jb_public);
                         if (Helpers.isOnline(MainActivity.this)) {
                             webView.loadUrl("https://" + podDomain + "/public");
                             return true;
@@ -757,6 +757,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.notifications) {
             if (Helpers.isOnline(MainActivity.this)) {
                 webView.loadUrl("https://" + podDomain + "/notifications");
+                txtTitle.setText(R.string.jb_notifications);
                 return true;
             } else {  // No Internet connection
                 Toast.makeText(
@@ -770,6 +771,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.conversations) {
             if (Helpers.isOnline(MainActivity.this)) {
                 webView.loadUrl("https://" + podDomain + "/conversations");
+                txtTitle.setText(R.string.jb_conversations);
                 return true;
             } else {  // No Internet connection
                 Toast.makeText(
