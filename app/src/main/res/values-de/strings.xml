@@ -63,9 +63,8 @@
 
     // Floating Action Buttons - Titles
 
-    <string name="fab4_title">Cache leeren und App verlassen</string>
-    <string name="fab3_title">Neuer Beitrag</string>
-    <string name="fab2_title">Nach oben scrollen</string>
+    <string name="fab3_title">Nach oben scrollen</string>
+    <string name="fab2_title">Neuer Beitrag</string>
     <string name="fab1_title">nach Personen oder Tags suchen</string>
     <string name="fab1_title_tag">Suche nach Tag #...</string>
     <string name="fab1_title_person">Suche nach Person ...</string>
@@ -114,4 +113,5 @@ along with this program.  If not, see http://www.gnu.org/licenses/.</string>
         <string name="search">Suche</string>
         <string name="stream">Stream</string>
     <string name="toggle_img">Bilder laden umschalten</string>
+    <string name="toast_doubleback">Drücke noch einmal ZURÜCK um die App zu verlassen.</string>
 </resources>

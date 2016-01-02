@@ -460,27 +460,6 @@ public class MainActivity extends AppCompatActivity {
 
                 if (progress > 10) {
 
-                    view.loadUrl("javascript: ( function() {" +
-                            "    if (document.getElementById('notification')) {" +
-                            "       var count = document.getElementById('notification').innerHTML;" +
-                            "       NotificationCounter.setNotificationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
-                            "    } else {" +
-                            "       NotificationCounter.setNotificationCount('0');" +
-                            "    }" +
-                            "    if (document.getElementById('conversation')) {" +
-                            "       var count = document.getElementById('conversation').innerHTML;" +
-                            "       NotificationCounter.setConversationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
-                            "    } else {" +
-                            "       NotificationCounter.setConversationCount('0');" +
-                            "    }" +
-                            "    if(document.getElementById('main_nav')) {" +
-                            "        document.getElementById('main_nav').parentNode.removeChild(" +
-                            "        document.getElementById('main_nav'));" +
-                            "    } else if (document.getElementById('main-nav')) {" +
-                            "        document.getElementById('main-nav').parentNode.removeChild(" +
-                            "        document.getElementById('main-nav'));" +
-                            "    }" +
-                            "})();");
 
                     //view.scrollTo(0, 70);
 
@@ -586,7 +565,8 @@ public class MainActivity extends AppCompatActivity {
                     else // if user have added a search tag
                     {
                         txtTitle.setText(R.string.fab1_title_person);
-                        webView.loadUrl("https://"+podDomain+"/people.mobile?q="+limpio);
+                        webView.loadUrl("https://" + podDomain + "/people.mobile?q=" + limpio);
+                        fab.collapse();
                     }
                 }
             });
@@ -605,6 +585,7 @@ public class MainActivity extends AppCompatActivity {
                             {
                                 txtTitle.setText(R.string.fab1_title_tag);
                                 webView.loadUrl("https://" +podDomain+ "/tags/" + limpio);
+                                fab.collapse();
                             }
                         }
                     });
@@ -614,15 +595,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void fab2_click(View v){
         if (Helpers.isOnline(MainActivity.this)) {
-            webView.scrollTo(0, 70);
-        }
-    }
-
-    public void fab3_click(View v){
-        if (Helpers.isOnline(MainActivity.this)) {
-            txtTitle.setText(R.string.fab4_title);
-            txtTitle.setText(R.string.fab3_title);
+            txtTitle.setText(R.string.fab2_title);
             webView.loadUrl("https://" + podDomain + "/status_messages/new");
+            fab.collapse();
         } else {  // No Internet connection
             Toast.makeText(
                     MainActivity.this,
@@ -631,20 +606,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void fab4_click(View v){
-        new AlertDialog.Builder(this)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .setMessage(getString(R.string.confirm_exit))
-                .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener()
-                {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        webView.clearCache(true);
-                        finish();
-                    }
-                })
-                .setNegativeButton(getString(R.string.no), null)
-                .show();
+    public void fab3_click(View v){
+        if (Helpers.isOnline(MainActivity.this)) {
+            webView.scrollTo(0,0);
+            fab.collapse();
+        } else {  // No Internet connection
+            Toast.makeText(
+                    MainActivity.this,
+                    getString(R.string.no_internet),
+                    Toast.LENGTH_LONG).show();
+        }
     }
 
 
@@ -700,11 +671,38 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    boolean doubleBackToExitPressedOnce = false;
 
     @Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
+            if (doubleBackToExitPressedOnce) {
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setMessage(getString(R.string.confirm_exit))
+                        .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton(getString(R.string.no), null)
+                        .show();
+            }
+
+            this.doubleBackToExitPressedOnce = true;
+            Toast.makeText(this, R.string.toast_doubleback, Toast.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    doubleBackToExitPressedOnce = false;
+                }
+            }, 2000);
             webView.goBack();
+
         } else {
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
@@ -719,6 +717,7 @@ public class MainActivity extends AppCompatActivity {
                     .setNegativeButton(getString(R.string.no), null)
                     .show();
         }
+
     }
 
 

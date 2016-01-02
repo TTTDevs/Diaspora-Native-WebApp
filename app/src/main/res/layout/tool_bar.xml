@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textColor="#ffffff"
-        android:textSize="@dimen/abc_text_size_title_material_toolbar" />
+        android:textSize="@dimen/abc_text_size_title_material_toolbar"
+        android:textColor="@color/primary_material_light" />
 
 </android.support.v7.widget.Toolbar>
