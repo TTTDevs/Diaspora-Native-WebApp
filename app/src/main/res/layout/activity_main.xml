@@ -37,8 +37,7 @@
                 android:layout_height="wrap_content"
                 style="@android:style/Widget.ProgressBar.Horizontal"
                 android:id="@+id/progressBar"
-                android:progressTint="@color/fab_big"
-                android:progressBackgroundTint="#00ffffff" />
+                android:progressTint="@color/fab_big" />
 
             <com.getbase.floatingactionbutton.FloatingActionsMenu
                 android:id="@+id/multiple_actions"
@@ -64,6 +63,7 @@
                     fab:fab_icon="@drawable/fab_top"
                     fab:fab_title="@string/fab3_title"
                     fab:fab_colorPressed="@color/fab_small_pressed"
+                    fab:fab_labelStyle="@style/menu_labels_style"
                     fab:fab_size="mini" />
 
                 <com.getbase.floatingactionbutton.FloatingActionButton

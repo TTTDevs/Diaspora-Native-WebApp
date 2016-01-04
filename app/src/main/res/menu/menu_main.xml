@@ -35,5 +35,17 @@
         android:orderInCategory="119"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/jb_exit"
+        android:title="@string/jb_exit"
+        android:orderInCategory="119"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/jb_license"
+        android:title="@string/jb_license"
+        android:orderInCategory="119"
+        app:showAsAction="never" />
+
 
 </menu>

@@ -37,8 +37,6 @@
     <string name="fab1_title_tag">Buscar etiqueta ...</string>
     <string name="fab2_title">Ir arriba</string>
     <string name="fab3_title">Redactar</string>
-    <string name="fab3_toast">Recargar sitio ...</string>
-    <string name="fab4_title">Limpiar cache y salir</string>
     <string name="jb_about">Acerca de</string>
     <string name="jb_activities">Mi actividad</string>
     <string name="jb_aspects">Mis aspectos</string>

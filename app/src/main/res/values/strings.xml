@@ -37,11 +37,12 @@
 
     // By me
 
-    <string name="toast_doubleback">Press BACK again to exit..</string>
+    <string name="toast_doubleback">Press BACK again to exit app.</string>
+    <string name="jb_exit">Exit App</string>
 
     // Drawer and App
 
-    <string name="app_copyright">your freedom | data | network</string>
+    <string name="app_copyright">The community-run distributed social network</string>
     <string name="closeDrawer">Navigation View</string>
     <string name="openDrawer">Navigation View Closed</string>
     <string name="jb_menu_0">Personal sites</string>
@@ -64,14 +65,10 @@
     <string name="jb_pod">Change pod</string>
     <string name="jb_public">Public activities</string>
 
-    // Floating Action Buttons - Toasts
-
-    <string name="fab3_toast">Reload site ...</string>
-
     // Floating Action Buttons - Titles
 
     <string name="fab3_title">Go to top</string>
-    <string name="fab2_title">New Message</string>
+    <string name="fab2_title">New message</string>
     <string name="fab1_title">Search by tags or persons</string>
     <string name="fab1_title_tag">Search for tag ...</string>
     <string name="fab1_title_person">Search for person ...</string>
@@ -95,7 +92,7 @@
         "By_me" in my sourcecode. All of the rest is the work of *martinchodev*. Big thanks to him.</string>
 
     //Dialog
-    <string name="license_yes" translatable="false">Visit project on GitHub</string>
+    <string name="license_yes">Visit project on GitHub</string>
     <string name="license_no" translatable="false">OK</string>
     <string name="license_title" translatable="false">Diaspora Native WebApp</string>
     <string name="license_text" translatable="false">Copyright (C) 2015  by martinchodev\n\n

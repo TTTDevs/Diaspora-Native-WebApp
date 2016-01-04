@@ -74,18 +74,4 @@
         </menu>
     </item>
 
-    <item android:title="@string/jb_menu_2">
-        <menu>
-            <!--<item-->
-                <!--android:id="@+id/jb_about"-->
-                <!--android:icon="@drawable/jb_info"-->
-                <!--android:title="@string/jb_about" />-->
-
-            <item
-                android:id="@+id/jb_license"
-                android:icon="@drawable/jb_license"
-                android:title="@string/jb_license" />
-        </menu>
-    </item>
-
 </menu>

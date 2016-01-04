@@ -23,7 +23,7 @@
     <string name="confirm_exit">Bist du sicher, dass du beenden willst?</string>
     <string name="yes">JA</string>
     <string name="no">NEIN</string>
-    <string name="please_wait">Bitte Warten</string>
+    <string name="please_wait">Bitte Warten ...</string>
     <string name="loading">Laden...</string>
     <string name="change_pod_warning">Das wird alle Cookies und Session-Daten löschen. Willst du wirklich den Pod wechseln?</string>
     <string name="clear_cookies_warning">Wenn du die Cookies löschst, wirst du ausgeloggt und verlierst deine Session-Daten. Willst du fortfahren?</string>
@@ -32,7 +32,6 @@
 
     // Drawer and App
 
-    <string name="app_copyright">Deine Freiheit | Deine Inhalte | Dein Netzwerk</string>
     <string name="closeDrawer">Navigation View</string>
     <string name="openDrawer">Navigation View Closed</string>
     <string name="jb_menu_0">Persönliche Inhalte</string>
@@ -55,11 +54,6 @@
     <string name="jb_pod">Pod wechseln</string>
     <string name="about_yes">Projektseite von *martinchodev* besuchen</string>
     <string name="jb_public">Öffentliche Aktivitäten</string>
-
-
-    // Floating Action Buttons - Toasts
-
-    <string name="fab3_toast">Seite wird neu geladen ...</string>
 
     // Floating Action Buttons - Titles
 
@@ -90,22 +84,6 @@
 
     //Dialog
     <string name="license_yes">Besuche die Projektseite auf GitHub</string>
-    <string name="license_no">OK</string>
-    <string name="license_title">Diaspora Native WebApp</string>
-    <string name="license_text">Copyright (C) 2015  by martinchodev\n\n
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see http://www.gnu.org/licenses/.</string>
         <string name="messages">Unterhaltungen</string>
         <string name="mobile">Ansicht wechseln</string>
         <string name="new_post">Neuer Beitrag</string>
@@ -114,4 +92,6 @@ along with this program.  If not, see http://www.gnu.org/licenses/.</string>
         <string name="stream">Stream</string>
     <string name="toggle_img">Bilder laden umschalten</string>
     <string name="toast_doubleback">Drücke noch einmal ZURÜCK um die App zu verlassen.</string>
+    <string name="splash_screen_description">Startbildschirm</string>
+    <string name="jb_exit">App verlassen</string>
 </resources>

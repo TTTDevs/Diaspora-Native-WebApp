@@ -146,8 +146,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.jb_stream:
+                        txtTitle.setText(R.string.jb_stream);
                         if (Helpers.isOnline(MainActivity.this)) {
-                            txtTitle.setText(R.string.jb_stream);
                             webView.loadUrl("https://" + podDomain + "/stream");
                             return true;
                         } else {  // No Internet connection
@@ -250,7 +250,6 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                     case R.id.jb_manage_tags:
-
                         txtTitle.setText(R.string.jb_manage_tags);
                         if (Helpers.isOnline(MainActivity.this)) {
                             webView.loadUrl("https://" + podDomain + "/tag_followings/manage");
@@ -262,27 +261,6 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.LENGTH_LONG).show();
                             return false;
                         }
-
-
-                    case R.id.jb_license:
-                        txtTitle.setText(R.string.jb_license);
-                        new AlertDialog.Builder(MainActivity.this)
-                                .setTitle(getString(R.string.license_title))
-                                .setMessage(getString(R.string.license_text))
-                                .setPositiveButton(getString(R.string.license_yes),
-                                        new DialogInterface.OnClickListener() {
-                                            public void onClick(DialogInterface dialog, int id) {
-                                                webView.loadUrl("https://github.com/martinchodev/Diaspora-Native-WebApp");
-                                                dialog.cancel();
-                                            }
-                                        })
-                                .setNegativeButton(getString(R.string.license_no), new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.cancel();
-                                    }
-                                }).show();
-
-                        return true;
 
                     case R.id.jb_aspects:
                         txtTitle.setText(R.string.jb_aspects);
@@ -340,8 +318,6 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.LENGTH_LONG).show();
                             return false;
                         }
-
-
                 }
             }
         });
@@ -413,27 +389,27 @@ public class MainActivity extends AppCompatActivity {
                     fab.setVisibility(View.VISIBLE);
                 }
 
-                view.loadUrl("javascript: ( function() {" +
-                        "    if (document.getElementById('notification')) {" +
-                        "       var count = document.getElementById('notification').innerHTML;" +
-                        "       NotificationCounter.setNotificationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
-                        "    } else {" +
-                        "       NotificationCounter.setNotificationCount('0');" +
-                        "    }" +
-                        "    if (document.getElementById('conversation')) {" +
-                        "       var count = document.getElementById('conversation').innerHTML;" +
-                        "       NotificationCounter.setConversationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
-                        "    } else {" +
-                        "       NotificationCounter.setConversationCount('0');" +
-                        "    }" +
-                        "    if(document.getElementById('main_nav')) {" +
-                        "        document.getElementById('main_nav').parentNode.removeChild(" +
-                        "        document.getElementById('main_nav'));" +
-                        "    } else if (document.getElementById('main-nav')) {" +
-                        "        document.getElementById('main-nav').parentNode.removeChild(" +
-                        "        document.getElementById('main-nav'));" +
-                        "    }" +
-                        "})();");
+//                view.loadUrl("javascript: ( function() {" +
+//                        "    if (document.getElementById('notification')) {" +
+//                        "       var count = document.getElementById('notification').innerHTML;" +
+//                        "       NotificationCounter.setNotificationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
+//                        "    } else {" +
+//                        "       NotificationCounter.setNotificationCount('0');" +
+//                        "    }" +
+//                        "    if (document.getElementById('conversation')) {" +
+//                        "       var count = document.getElementById('conversation').innerHTML;" +
+//                        "       NotificationCounter.setConversationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
+//                        "    } else {" +
+//                        "       NotificationCounter.setConversationCount('0');" +
+//                        "    }" +
+//                        "    if(document.getElementById('main_nav')) {" +
+//                        "        document.getElementById('main_nav').parentNode.removeChild(" +
+//                        "        document.getElementById('main_nav'));" +
+//                        "    } else if (document.getElementById('main-nav')) {" +
+//                        "        document.getElementById('main-nav').parentNode.removeChild(" +
+//                        "        document.getElementById('main-nav'));" +
+//                        "    }" +
+//                        "})();");
 
             }
 
@@ -458,13 +434,43 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(WebView view, int progress) {
                 progressBar.setProgress(progress);
 
-                if (progress > 10) {
+                if (progress > 0 && progress <= 60) {
+
+                    view.loadUrl("javascript: ( function() {" +
+                            "    if (document.getElementById('notification')) {" +
+                            "       var count = document.getElementById('notification').innerHTML;" +
+                            "       NotificationCounter.setNotificationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
+                            "    } else {" +
+                            "       NotificationCounter.setNotificationCount('0');" +
+                            "    }" +
+                            "    if (document.getElementById('conversation')) {" +
+                            "       var count = document.getElementById('conversation').innerHTML;" +
+                            "       NotificationCounter.setConversationCount(count.replace(/(\\r\\n|\\n|\\r)/gm, \"\"));" +
+                            "    } else {" +
+                            "       NotificationCounter.setConversationCount('0');" +
+                            "    }" +
+                            "})();");
+                }
+
+                if (progress > 60) {
+
+                    view.loadUrl("javascript: ( function() {" +
+                            "    if(document.getElementById('main_nav')) {" +
+                            "        document.getElementById('main_nav').parentNode.removeChild(" +
+                            "        document.getElementById('main_nav'));" +
+                            "    } else if (document.getElementById('main-nav')) {" +
+                            "        document.getElementById('main-nav').parentNode.removeChild(" +
+                            "        document.getElementById('main-nav'));" +
+                            "    }" +
+                            "})();");
 
 
-                    //view.scrollTo(0, 70);
+                    fab.setVisibility(View.VISIBLE);
 
                 }
+
                 if (progress == 100) {
+                    fab.collapse();
                     progressBar.setVisibility(View.GONE);
                 } else {
                     progressBar.setVisibility(View.VISIBLE);
@@ -547,6 +553,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void fab1_click(View v){
 
+        fab.collapse();
+
         if (Helpers.isOnline(MainActivity.this)) {
             final AlertDialog.Builder alert = new AlertDialog.Builder(this);
             final EditText input = new EditText(this);
@@ -566,7 +574,6 @@ public class MainActivity extends AppCompatActivity {
                     {
                         txtTitle.setText(R.string.fab1_title_person);
                         webView.loadUrl("https://" + podDomain + "/people.mobile?q=" + limpio);
-                        fab.collapse();
                     }
                 }
             });
@@ -584,8 +591,7 @@ public class MainActivity extends AppCompatActivity {
                             else // if user have added a search tag
                             {
                                 txtTitle.setText(R.string.fab1_title_tag);
-                                webView.loadUrl("https://" +podDomain+ "/tags/" + limpio);
-                                fab.collapse();
+                                webView.loadUrl("https://" + podDomain + "/tags/" + limpio);
                             }
                         }
                     });
@@ -594,10 +600,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fab2_click(View v){
+        fab.collapse();
         if (Helpers.isOnline(MainActivity.this)) {
             txtTitle.setText(R.string.fab2_title);
             webView.loadUrl("https://" + podDomain + "/status_messages/new");
-            fab.collapse();
         } else {  // No Internet connection
             Toast.makeText(
                     MainActivity.this,
@@ -607,15 +613,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fab3_click(View v){
-        if (Helpers.isOnline(MainActivity.this)) {
-            webView.scrollTo(0,0);
-            fab.collapse();
-        } else {  // No Internet connection
-            Toast.makeText(
-                    MainActivity.this,
-                    getString(R.string.no_internet),
-                    Toast.LENGTH_LONG).show();
-        }
+        fab.collapse();
+        webView.scrollTo(0, 70);
     }
 
 
@@ -671,6 +670,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
@@ -680,11 +680,10 @@ public class MainActivity extends AppCompatActivity {
                 new AlertDialog.Builder(this)
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .setMessage(getString(R.string.confirm_exit))
-                        .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener()
-                        {
+                        .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                finish();
+                                moveTaskToBack(true);
                             }
                         })
                         .setNegativeButton(getString(R.string.no), null)
@@ -707,17 +706,15 @@ public class MainActivity extends AppCompatActivity {
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setMessage(getString(R.string.confirm_exit))
-                    .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener()
-                    {
+                    .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            finish();
+                            moveTaskToBack(true);
                         }
                     })
                     .setNegativeButton(getString(R.string.no), null)
                     .show();
         }
-
     }
 
 
@@ -754,9 +751,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.notifications) {
+            txtTitle.setText(R.string.jb_notifications);
             if (Helpers.isOnline(MainActivity.this)) {
                 webView.loadUrl("https://" + podDomain + "/notifications");
-                txtTitle.setText(R.string.jb_notifications);
                 return true;
             } else {  // No Internet connection
                 Toast.makeText(
@@ -768,9 +765,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.conversations) {
+            txtTitle.setText(R.string.jb_conversations);
             if (Helpers.isOnline(MainActivity.this)) {
                 webView.loadUrl("https://" + podDomain + "/conversations");
-                txtTitle.setText(R.string.jb_conversations);
                 return true;
             } else {  // No Internet connection
                 Toast.makeText(
@@ -809,6 +806,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+
         if (id == R.id.loadImg) {
             if (Helpers.isOnline(MainActivity.this)) {
                 wSettings.setLoadsImagesAutomatically(!pm.getLoadImages());
@@ -822,6 +820,41 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
                 return false;
             }
+        }
+
+        if (id == R.id.jb_exit) {
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setMessage(getString(R.string.confirm_exit))
+                    .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            webView.clearCache(true);
+                            finish();
+                        }
+                    })
+                    .setNegativeButton(getString(R.string.no), null)
+                    .show();
+        }
+
+
+        if (id == R.id.jb_license) {
+            new AlertDialog.Builder(MainActivity.this)
+                    .setTitle(getString(R.string.license_title))
+                    .setMessage(getString(R.string.license_text))
+                    .setPositiveButton(getString(R.string.license_yes),
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    webView.loadUrl("https://github.com/martinchodev/Diaspora-Native-WebApp");
+                                    dialog.cancel();
+                                }
+                            })
+                    .setNegativeButton(getString(R.string.license_no), new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    }).show();
         }
 
         return super.onOptionsItemSelected(item);
