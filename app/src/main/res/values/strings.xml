@@ -85,11 +85,27 @@
     <string name="about_no">OK</string>
     <string name="about_title">Diaspora Native WebApp</string>
     <string name="about_text">First of all: I am not a developer. I understand a few basics and most of my work is done
-        by copy and paste. This app is build from the original *DiasporaNativeWebApp* Version 1.6.1
+        by copy and paste. This app is build from the original *DiasporaNativeWebApp*
         from *martinchodev*, which is released under the GPL-license. Because I wanted a better visual integration
-        with my personal phone-setup, I changed a few icons and the splashscreen. I also added the navigationdrawer
-        and the floating-action-buttons. I also did some minor changes. Nearly all of my changes are tagged with
-        "By_me" in my sourcecode. All of the rest is the work of *martinchodev*. Big thanks to him.</string>
+        with my personal phone-setup, I did some minor changes.
+        All of the rest is the work of *martinchodev*. Big thanks to him.\n\n
+
+        Copyright (C) 2016  by Scoute-dich\n\n
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/.
+
+    </string>
 
     //Dialog
     <string name="license_yes">Visit project on GitHub</string>

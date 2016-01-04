@@ -73,14 +73,6 @@
 
     <string name="about_no">OK</string>
     <string name="about_title">Diaspora Native WebApp</string>
-    <string name="about_text">Zuerst einmal: ich bin kein Entwickler. Ich verstehe ein paar Grundlagen und
-        das meiste, was ich getan habe war copy and paste. Diese App baut auf der *DiasporaNativeWebApp* Version 1.6.1
-        von *martinchodev* auf, welche unter der GPL-Lizenz veröffentlicht wurde. Weil ich eine bessere Integration
-        in meine persönlichen Telefoneinstellungen wollte, habe ich einige Icons und den Startscreen geändert.
-        Ich habe ebenfalls den Navigationdrawer und die Floating-Action-Buttons integriert.
-        Ansonsten habe ich nur kleine Veränderungen vorgenommen. Ich habe versucht (fast) alle meine
-        Änderungen mit "By_me" in meinem Quellcode kenntlich zu machen. Den ganzen Rest der Arbeit hat *martinchodev*
-        geleistet. Mein großer Dank gilt ihm.</string>
 
     //Dialog
     <string name="license_yes">Besuche die Projektseite auf GitHub</string>

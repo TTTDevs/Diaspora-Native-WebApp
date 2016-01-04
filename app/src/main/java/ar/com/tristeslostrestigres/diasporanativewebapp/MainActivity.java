@@ -842,11 +842,11 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.jb_license) {
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle(getString(R.string.license_title))
-                    .setMessage(getString(R.string.license_text))
+                    .setMessage(getString(R.string.about_text))
                     .setPositiveButton(getString(R.string.license_yes),
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
-                                    webView.loadUrl("https://github.com/martinchodev/Diaspora-Native-WebApp");
+                                    webView.loadUrl("https://github.com/scoute-dich/Diaspora-Native-WebApp");
                                     dialog.cancel();
                                 }
                             })
