@@ -23,13 +23,87 @@
     <string name="confirm_exit">Êtes-vous sûr de vouloir quitter l\'application ?</string>
     <string name="please_wait">Veuillez patienter</string>
     <string name="loading">Chargement...</string>
-    <string name="clear_cookies_warning">Effacer les cookies va vous déconnecter et effacer toutes les données de la session. Voulez-vous continuer ?</string>
     <string name="change_pod_warning">Cette action va supprimer tous les cookies et les données de la session. Voulez-vous vraiment changer de pod ?</string>
+    <string name="clear_cookies_warning">Effacer les cookies va vous déconnecter et effacer toutes les données de la session. Voulez-vous continuer ?</string>
+
+    // Drawer and App
+
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="jb_menu_0">Menu personnel</string>
+    <string name="jb_menu_1">Paramètres</string>
+    <string name="jb_menu_2">Application</string>
+    <string name="jb_about">A propos</string>
+    <string name="jb_license">Licence</string>
+    <string name="jb_stream">Flux</string>
+    <string name="jb_notifications">Notifications</string>
+    <string name="jb_conversations">Conversations</string>
+    <string name="jb_liked">Eléments aimés</string>
+    <string name="jb_commented">Messages commentés</string>
+    <string name="jb_contacts">Contacts</string>
+    <string name="jb_mentions">Mentions</string>
+    <string name="jb_activities">Mon activité</string>
+    <string name="jb_followed_tags">Tags suivis</string>
+    <string name="jb_manage_tags">Gérer les tags</string>
+    <string name="jb_settings">Pamamètres personnels</string>
+    <string name="jb_aspects">Mes aspects</string>
+    <string name="jb_pod">Changer de pod</string>
+    <string name="jb_public">Messages publics</string>
+
+
+    // Floating Action Buttons - Toasts
+
+    <string name="fab3_toast">Recharger le site ...</string>
+
+    // Floating Action Buttons - Titles
+
+    <string name="fab4_title">Vider le cache et quitter l\'application</string>
+    <string name="fab3_title">Nouveau message</string>
+    <string name="fab2_title">Retour en haut</string>
+    <string name="fab1_title">Recherche par tags ou par personnes</string>
+    <string name="fab1_title_tag">Chercher un tag ...</string>
+    <string name="fab1_title_person">Chercher une personne ...</string>
+
+    <string name="search_alert_title">Recherche</string>
+    <string name="search_alert_tag">d\'un tag</string>
+    <string name="search_alert_people">d\'une personne</string>
+    <string name="search_alert_bypeople_validate_needsomedata">Veuillez ajouter un nom</string>
+    <string name="search_alert_bytags_validate_needsomedata">Essayer d'ajouter un tag comme : #newhere ou #art</string>
+
+    //Dialog
+
+    <string name="about_yes">Visit projectsite from *martinchodev*</string>
+    <string name="about_no">OK</string>
+    <string name="about_title">Diaspora Native WebApp</string>
+    <string name="about_text">First of all: I am not a developer. I understand a few basics and most of my work is done
+        by copy and paste. This app is build from the original *DiasporaNativeWebApp* Version 1.6.1
+        from *martinchodev*, which is released under the GPL-license. Because I wanted a better visual integration
+        with my personal phone-setup, I changed a few icons and the splashscreen. I also added the navigationdrawer
+        and the floating-action-buttons. I also did some minor changes. Nearly all of my changes are tagged with
+        "By_me" in my sourcecode. All of the rest is the work of *martinchodev*. Big thanks to him.</string>
+
+    <string name="splash_screen_description">Splash screen</string>
+    <string name="toggle_img">Activer/désactiver le chargement des images</string>
+    <string name="please_reload">Veuillez recharger le flux</string>
+    <string name="font_size">Taille de la police</string>
+    <string name="normal">Normal</string>
+    <string name="large">Large</string>
+    <string name="huge">Enorme</string>
+    <array name="splash_images">
+        <item>@drawable/splash1</item>
+        <item>@drawable/splash2</item>
+        <item>@drawable/splash3</item>
+        <item>@drawable/splash4</item>
+        <item>@drawable/splash5</item>
+        <item>@drawable/splash6</item>
+    </array>
+
+    //Dialog
+
+    <string name="messages">Discutions</string>
+    <string name="mobile">Activer/désactiver la version mobile</string>
     <string name="new_post">Nouveau message</string>
     <string name="notifications">Notifications</string>
-    <string name="messages">Discutions</string>
-    <string name="stream">Flux</string>
     <string name="search">Recherche</string>
-    <string name="mobile">Activer/désactiver la version mobile</string>
-    <string name="closeDrawer"></string>
+    <string name="stream">Flux</string>
 </resources>
